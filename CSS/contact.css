@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: rgb(236, 235, 225);
+  font-family: "Lato", sans-serif;
+}
+
+/* ------------ navbar ---------- */
+
+nav {
+  overflow: hidden;
+  transition: 0.5s;
+  position: fixed;
+  width: 100%;
+  opacity: 0.9;
+  z-index: 2;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+nav a {
+  color: white;
+  text-shadow: 3px 2px 8px black;
+  text-decoration: none;
+  padding: 50% auto;
+}
+nav li {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 18px 5px;
+}
+
+/* -------------- Titre principal ----------- */
+
+#titre {
+  background: url(../img/montagne.webp) no-repeat 50% 50%;
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  font-size: 5vw;
+  text-transform: uppercase;
+  padding-top: 45px;
+  color: rgb(236, 228, 218);
+  text-shadow: 3px 2px 6px black;
+}
+/* ----------- Section ---------- */
+
+section {
+  color: black;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+.adresse,
+.telephone,
+.mail {
+  border: 2px solid black;
+  height: 200px;
+  width: 300px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.adresse {
+  margin: 0 10px 0 50px;
+}
+.telephone {
+  margin: 0 10px;
+}
+.mail {
+  margin: 0 50px 0 10px;
+}
+#iconeLoc,
+#iconeTel,
+#iconeMail {
+  height: 40px;
+}
+
+section p {
+  font-size: 1.2rem;
+  padding: 10px;
+}
+
+/* -------- Footer -------- */
+
+footer {
+  background: rgb(40, 40, 41);
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+footer a {
+  font-size: 3rem;
+  color: black;
+  text-decoration: none;
+  background: rgb(229, 191, 178);
+  padding: 20px;
+  border-radius: 15px;
+}
+a:hover {
+  opacity: 70%;
+}
+
+/* --------- Responsive ---------- */
+
+@media screen and (max-width: 750px) {
+  section {
+    flex-direction: column;
+  }
+  .adresse,
+  .telephone,
+  .mail {
+    margin: 10px 0;
+  }
+  footer a {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 570px) {
+  nav li {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  nav li {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  #titre {
+    height: 200px;
+  }
+  .adresse,
+  .telephone,
+  .mail {
+    height: 150px;
+    width: 250px;
+  }
+}

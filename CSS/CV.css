@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: rgb(236, 235, 225);
+  font-family: "Lato", sans-serif;
+}
+
+/* ------------ navbar ---------- */
+
+nav {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  opacity: 0.9;
+  transition: 0.5s;
+  z-index: 2;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+nav a {
+  color: white;
+  text-shadow: 3px 2px 8px black;
+  text-decoration: none;
+  padding: 50% auto;
+}
+nav li {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 18px 5px;
+}
+
+/* -------------- Titre Principal --------- */
+
+#titre {
+  background: url(../img/ocean.jpeg) no-repeat 50% 50%;
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  font-size: 5vw;
+  text-transform: uppercase;
+  padding-top: 45px;
+  color: rgb(236, 228, 218);
+  text-shadow: 3px 2px 6px black;
+}
+
+/* ------------- CV ----------- */
+section {
+  margin: 70px;
+}
+.box {
+  background: rgb(40, 40, 41);
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 10px;
+  height: 100px;
+  width: 450px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  height: 80px;
+  width: 80px;
+  display: block;
+  margin: auto;
+}
+img:hover {
+  scale: 1.5;
+}
+.fleche2,
+.fleche3,
+.fleche4 {
+  visibility: hidden;
+}
+.box2,
+.box3,
+.box4,
+.box5 {
+  visibility: hidden;
+}
+h4 {
+  font-size: 1.6rem;
+  color: rgb(229, 191, 178);
+}
+p {
+  font-size: 1.2rem;
+  color: rgb(229, 191, 178);
+}
+/* --------- Responsive ---------- */
+
+@media screen and (max-width: 700px) {
+  .box {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 570px) {
+  nav li {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  nav li {
+    font-size: 0.7rem;
+  }
+  h4 {
+    font-size: 1.3rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  #titre {
+    height: 200px;
+  }
+}

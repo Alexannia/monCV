@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body {
+  background: rgb(236, 235, 225);
+  font-family: "Lato", sans-serif;
+}
+
+/* ------------ navbar ---------- */
+
+nav {
+  overflow: hidden;
+  transition: 0.5s;
+  position: fixed;
+  width: 100%;
+  opacity: 0.9;
+  z-index: 2;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+nav a {
+  color: white;
+  text-shadow: 3px 2px 8px black;
+  text-decoration: none;
+  padding: 50% auto;
+}
+nav li {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 18px 5px;
+}
+
+/* -------------- Titre principal ----------- */
+
+#titre {
+  background: url(../img/ville.webp) no-repeat 50% 50%;
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  font-size: 5vw;
+  text-transform: uppercase;
+  padding-top: 45px;
+  color: rgb(236, 228, 218);
+  text-shadow: 3px 2px 6px black;
+}
+
+/* ---------------- Compétences ----------- */
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+#img1,
+#img2 {
+  height: 300px;
+}
+.txt1,
+.txt2 {
+  background: rgb(229, 191, 178);
+  height: 200px;
+  width: 350px;
+  margin-top: 150px;
+  padding: 40px 10px 10px 40px;
+}
+.competencesPersonnelles {
+  display: flex;
+  padding: 50px 50px 30px 150px;
+}
+.competencesTechniques {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 30px 150px 50px 50px;
+}
+section ul {
+  padding: 20px 30px 10px 10px;
+}
+.txt1 {
+  margin-left: -30px;
+}
+.txt2 {
+  margin-right: -30px;
+  background: rgb(40, 40, 41);
+  z-index: 1;
+  color: antiquewhite;
+}
+
+/* ----------- Responsive ----------- */
+
+@media screen and (max-width: 950px) {
+  .competencesPersonnelles {
+    padding: 50px 50px 30px 50px;
+  }
+  .competencesTechniques {
+    padding: 30px 50px 50px 50px;
+  }
+}
+@media screen and (max-width: 830px) {
+  #img1,
+  #img2 {
+    height: 200px;
+  }
+  .txt1,
+  .txt2 {
+    height: 150px;
+    width: 250px;
+    padding: 20px 10px 10px 20px;
+    font-size: 0.8rem;
+  }
+  .txt1 {
+    margin: 90px 0 0 -30px;
+  }
+  .txt2 {
+    margin: 90px -30px 0 0;
+  }
+}
+@media screen and (max-width: 570px) {
+  nav li {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  nav li {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  #img1,
+  #img2 {
+    height: 150px;
+  }
+  #titre {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .competencesPersonnelles {
+    padding: 50px 30px 30px 20px;
+  }
+  .competencesTechniques {
+    padding: 30px 20px 50px 30px;
+  }
+}
+@media screen and (max-width: 380px) {
+  #img1,
+  #img2 {
+    height: 130px;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  .txt1,
+  .txt2 {
+    height: 130px;
+    width: 150px;
+    padding: 10px;
+  }
+  section ul {
+    padding: 10px 10px 10px 10px;
+  }
+}

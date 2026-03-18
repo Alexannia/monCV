@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: rgb(236, 235, 225);
+  font-family: "Lato", sans-serif;
+}
+
+/* ------------ navbar ---------- */
+
+nav {
+  overflow: hidden;
+  transition: 0.5s;
+  position: fixed;
+  width: 100%;
+  opacity: 0.9;
+  z-index: 2;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+nav a {
+  color: white;
+  text-shadow: 3px 2px 8px black;
+  text-decoration: none;
+  padding: 50% auto;
+}
+nav li {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 18px 5px;
+}
+
+/* -------------- Titre principal ----------- */
+
+#titre {
+  background: url(../img/jetee.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  font-size: 5vw;
+  text-transform: uppercase;
+  padding-top: 45px;
+  color: rgb(236, 228, 218);
+  text-shadow: 3px 2px 6px black;
+}
+
+/* ---------- Lettre de motivation ----------  */
+
+.monHistoire,
+.mesMotivations {
+  display: flex;
+  flex-direction: column;
+}
+h2 {
+  height: 40px;
+  width: 200px;
+  text-align: center;
+  padding-top: 15px;
+  z-index: 1;
+}
+.monHistoire p,
+.mesMotivations p {
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 50px;
+}
+.monHistoire h2 {
+  background: rgb(229, 191, 178);
+  margin: 70px 0 -30px 120px;
+}
+.monHistoire p {
+  background-color: rgb(40, 40, 41);
+  width: 60%;
+  margin: 0 70px;
+  color: antiquewhite;
+}
+.mesMotivations {
+  align-items: flex-end;
+}
+.mesMotivations h2 {
+  background: rgb(40, 40, 41);
+  margin: 70px 120px -30px 0;
+  color: antiquewhite;
+}
+.mesMotivations p {
+  background: rgb(229, 191, 178);
+  width: 60%;
+  margin: 0 70px 70px 70px;
+}
+
+/* ------------ Responsive ---------- */
+
+@media screen and (max-width: 600px) {
+  .monHistoire p,
+  .mesMotivations p {
+    font-size: 2.7vw;
+    padding: 30px;
+  }
+  .monHistoire,
+  .mesMotivations {
+    align-items: center;
+  }
+  h2 {
+    width: 100px;
+    height: 30px;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 570px) {
+  nav li {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  nav li {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  #titre {
+    height: 200px;
+  }
+}

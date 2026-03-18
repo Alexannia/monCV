@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(236, 235, 225);
+  font-family: "Lato", sans-serif;
+}
+
+/* ------------ navbar ---------- */
+
+nav {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  opacity: 0.9;
+  transition: 0.5s;
+  z-index: 2;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+nav a {
+  color: white;
+  text-shadow: 3px 2px 8px black;
+  text-decoration: none;
+  padding: 50% auto;
+}
+nav li {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 18px 5px;
+}
+
+/* -------------- Titre principal ----------- */
+
+#titre {
+  background: url(../img/green-tree-body-water.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  padding-top: 60px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+h1 {
+  font-size: 5vw;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 45px;
+  color: rgb(236, 228, 218);
+  text-shadow: 3px 2px 6px black;
+}
+h2 {
+  color: rgb(236, 228, 218);
+  font-size: 2vw;
+  text-align: center;
+  padding-top: 15px;
+  text-shadow: 3px 2px 6px black;
+}
+
+/* --------------- Section 1 ----------- */
+
+section {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: center;
+  align-items: center;
+  margin: 30px 30px;
+  height: 400px;
+}
+#photo {
+  height: 274px;
+}
+#citation {
+  height: 270px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  border: 2px solid rgb(40, 40, 41);
+}
+#guillemets {
+  width: 15%;
+  margin: -35px 10px 10px 10px;
+  background: rgb(236, 235, 225);
+}
+#citation p {
+  font-size: 2rem;
+  padding: 20px 70px;
+  max-height: 100%;
+  color: rgb(40, 40, 41);
+}
+
+/* ----------- Section 3 --------- */
+
+footer {
+  background: rgb(229, 191, 178);
+}
+footer p {
+  text-align: center;
+  font-size: 1.4rem;
+}
+#apprendre {
+  padding-top: 50px;
+  font-size: 1.6rem;
+}
+.ligne {
+  width: 100px;
+  border: 1px solid black;
+  margin: 40px auto;
+}
+#txt {
+  padding: 0 50px;
+}
+#visite {
+  padding: 50px;
+}
+
+/* --------- Responsive ---------- */
+
+@media screen and (max-width: 880px) {
+  section {
+    display: flex;
+    flex-direction: column;
+    margin: 80px auto;
+    min-height: 85vh;
+  }
+  #photo {
+    margin-bottom: 70px;
+  }
+  #citation {
+    margin-bottom: 30px;
+    width: 360px;
+  }
+  #citation p {
+    padding: 10px 20px 45px 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 7vw;
+  }
+  h2 {
+    font-size: 3vw;
+  }
+}
+@media screen and (max-width: 570px) {
+  nav li {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  nav li {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  section {
+    min-height: 60vh;
+  }
+  #titre {
+    height: 200px;
+  }
+  #photo {
+    height: 170px;
+  }
+  #citation {
+    height: 170px;
+    width: 227px;
+  }
+  #citation p {
+    font-size: 1.2rem;
+  }
+  #guillemets {
+    width: 15%;
+    margin: -18px 10px 10px 10px;
+  }
+  #apprendre {
+    font-size: 1.2rem;
+  }
+  footer p {
+    font-size: 1rem;
+  }
+}
